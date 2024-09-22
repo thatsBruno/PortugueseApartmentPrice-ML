@@ -1,0 +1,330 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\Users\\Princcipal\\source\\repos\\PortugueseApartmentPrice-ML\\PortugueseApartmentPrice-ML\\Datasets\\portugal_apartments.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Index",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Type",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Price",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Area",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Location",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.59810044273547036,
+        "RuntimeInSeconds": 0.151,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "Type"
+            ],
+            "InputColumnNames": [
+              "Type"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Area"
+            ],
+            "InputColumnNames": [
+              "Area"
+            ]
+          },
+          "e2": {
+            "InputColumnName": "Location",
+            "OutputColumnName": "Location"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "Type",
+              "Area",
+              "Location"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfTrees": 23,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 0.81763613,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.59810044273547036,
+        "RuntimeInSeconds": 0.151,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "Type"
+            ],
+            "InputColumnNames": [
+              "Type"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Area"
+            ],
+            "InputColumnNames": [
+              "Area"
+            ]
+          },
+          "e2": {
+            "InputColumnName": "Location",
+            "OutputColumnName": "Location"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "Type",
+              "Area",
+              "Location"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfTrees": 23,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 0.8197983,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.59810044273547036,
+        "RuntimeInSeconds": 0.152,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "Type"
+            ],
+            "InputColumnNames": [
+              "Type"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Area"
+            ],
+            "InputColumnNames": [
+              "Area"
+            ]
+          },
+          "e2": {
+            "InputColumnName": "Location",
+            "OutputColumnName": "Location"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "Type",
+              "Area",
+              "Location"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfTrees": 23,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 0.81557363,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.59810044273547036,
+        "RuntimeInSeconds": 0.15,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "Type"
+            ],
+            "InputColumnNames": [
+              "Type"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Area"
+            ],
+            "InputColumnNames": [
+              "Area"
+            ]
+          },
+          "e2": {
+            "InputColumnName": "Location",
+            "OutputColumnName": "Location"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "Type",
+              "Area",
+              "Location"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfTrees": 23,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 0.8167363,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.59810044273547036,
+        "RuntimeInSeconds": 0.16,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "Type"
+            ],
+            "InputColumnNames": [
+              "Type"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Area"
+            ],
+            "InputColumnNames": [
+              "Area"
+            ]
+          },
+          "e2": {
+            "InputColumnName": "Location",
+            "OutputColumnName": "Location"
+          },
+          "e3": {
+            "InputColumnNames": [
+              "Type",
+              "Area",
+              "Location"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfTrees": 23,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 0.8185713,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "ReplaceMissingValues",
+      "e2": "FeaturizeText",
+      "e3": "Concatenate",
+      "e4": "FastTreeRegression",
+      "e5": "FastForestRegression",
+      "e6": "LightGbmRegression",
+      "e7": "LbfgsPoissonRegressionRegression",
+      "e8": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * e2 * e3 * (e4 + e5 + e6 + e7 + e8)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "C:\\Users\\Princcipal\\source\\repos\\PortugueseApartmentPrice-ML\\PortugueseApartmentPrice-ML\\MLModel.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Tuner": "eci-cfo",
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 60,
+    "OptimizeMetric": "RSquared",
+    "LabelColumn": "Price",
+    "AvailableTrainers": [
+      "SDCA",
+      "LBFGS",
+      "LGBM",
+      "FASTTREE",
+      "FASTFOREST"
+    ],
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "TrainValidateSplitValidationOption",
+      "SplitRatio": 0.2
+    }
+  }
+}
