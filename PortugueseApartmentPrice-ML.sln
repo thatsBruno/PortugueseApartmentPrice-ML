@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortugueseApartmentPrice-ML", "PortugueseApartmentPrice-ML\PortugueseApartmentPrice-ML.csproj", "{72D62DCD-20C3-44CC-89FC-49624D220EAF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortugueseApartmentsPrice-ML_WebApi", "PortugueseApartmentsPrice-ML_WebApi\PortugueseApartmentsPrice-ML_WebApi.csproj", "{0C7B4F40-D816-4182-9554-810A7C124DB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{72D62DCD-20C3-44CC-89FC-49624D220EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72D62DCD-20C3-44CC-89FC-49624D220EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72D62DCD-20C3-44CC-89FC-49624D220EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C7B4F40-D816-4182-9554-810A7C124DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7B4F40-D816-4182-9554-810A7C124DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7B4F40-D816-4182-9554-810A7C124DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7B4F40-D816-4182-9554-810A7C124DB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
